@@ -26,8 +26,6 @@ Debes seleccionar **uno** de los siguientes conjuntos de datos para la práctica
 - **Heart Disease** – Diagnóstico de enfermedades cardíacas (*clasificación binaria*).
 - **Customer Churn** – Predicción de abandono de clientes (*clasificación binaria*). 
 
-Puedes incluir el dataset en una carpeta `data/` o cargarlo desde una fuente externa (Kaggle, UCI, etc.), según lo que indique el docente.
-
 ---
 
 ## Requisitos
