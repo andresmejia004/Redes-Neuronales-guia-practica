@@ -1,6 +1,6 @@
 # Guía Práctica: Entrenamiento y Optimización de Redes Neuronales
 
-Repositorio para desarrollar la práctica de la asignatura **Redes Neuronales Artificiales I** de la Universidad Santiago de Cali. El objetivo es **aplicar y comparar algoritmos de optimización en redes neuronales** usando Python y TensorFlow, observando el impacto de distintos optimizadores y tasas de aprendizaje en el rendimiento del modelo. :contentReference[oaicite:0]{index=0}
+Repositorio para desarrollar la práctica de la asignatura **Redes Neuronales Artificiales I** de la Universidad Santiago de Cali. El objetivo es **aplicar y comparar algoritmos de optimización en redes neuronales** usando Python y TensorFlow, observando el impacto de distintos optimizadores y tasas de aprendizaje en el rendimiento del modelo. 
 
 ---
 
@@ -12,7 +12,7 @@ Repositorio para desarrollar la práctica de la asignatura **Redes Neuronales Ar
 - Comparar:
   - Velocidad de convergencia.
   - Estabilidad del entrenamiento.
-  - Rendimiento final en entrenamiento y validación. :contentReference[oaicite:1]{index=1}
+  - Rendimiento final en entrenamiento y validación. 
 
 ---
 
@@ -24,7 +24,7 @@ Debes seleccionar **uno** de los siguientes conjuntos de datos para la práctica
 - **Diabetes** – Diagnóstico de diabetes (*clasificación binaria*).
 - **House Prices** – Predicción de precios de viviendas (*regresión*).
 - **Heart Disease** – Diagnóstico de enfermedades cardíacas (*clasificación binaria*).
-- **Customer Churn** – Predicción de abandono de clientes (*clasificación binaria*). :contentReference[oaicite:2]{index=2}
+- **Customer Churn** – Predicción de abandono de clientes (*clasificación binaria*). 
 
 Puedes incluir el dataset en una carpeta `data/` o cargarlo desde una fuente externa (Kaggle, UCI, etc.), según lo que indique el docente.
 
