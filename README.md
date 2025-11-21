@@ -1,44 +1,43 @@
-# Guía Práctica: Entrenamiento y Optimización de Redes Neuronales
+# Guía práctica – Redes neuronales (Heart Disease)
 
-Repositorio para desarrollar la práctica de la asignatura **Redes Neuronales Artificiales I** de la Universidad Santiago de Cali. El objetivo es **aplicar y comparar algoritmos de optimización en redes neuronales** usando Python y TensorFlow, observando el impacto de distintos optimizadores y tasas de aprendizaje en el rendimiento del modelo. 
-
----
-
-## Objetivos
-
-- Implementar una **red neuronal simple** en TensorFlow.
-- Entrenar el modelo con distintos **optimizadores** (SGD y Adam).
-- Probar **diferentes tasas de aprendizaje** y analizar su efecto.
-- Comparar:
-  - Velocidad de convergencia.
-  - Estabilidad del entrenamiento.
-  - Rendimiento final en entrenamiento y validación. 
+Este repositorio contiene el desarrollo de una guía práctica sobre **entrenamiento de redes neuronales** usando TensorFlow/Keras.  
+El objetivo principal es entrenar y comparar una red neuronal simple para el problema de **clasificación binaria de enfermedades cardíacas** (*Heart Disease*), analizando el efecto de distintos **optimizadores** y **tasas de aprendizaje**.
 
 ---
 
-## Datasets disponibles
+## Contenido del repositorio
 
-Debes seleccionar **uno** de los siguientes conjuntos de datos para la práctica:
+- `ejercicio_redes_neuronales.ipynb`  
+  Notebook principal del ejercicio. Incluye:
+  - Carga y exploración del dataset **Heart Disease**.
+  - Preprocesamiento (selección de características, partición train/test, normalización).
+  - Definición de una red neuronal feedforward en Keras.
+  - Entrenamiento con:
+    - **SGD** (varios `learning_rate`).
+    - **Adam** (varios `learning_rate`).
+  - Gráficas de curvas de **loss** y **accuracy**.
+  - Sección de análisis y conclusiones.
 
-- **Titanic** – Supervivencia de pasajeros (*clasificación binaria*).
-- **Diabetes** – Diagnóstico de diabetes (*clasificación binaria*).
-- **House Prices** – Predicción de precios de viviendas (*regresión*).
-- **Heart Disease** – Diagnóstico de enfermedades cardíacas (*clasificación binaria*).
-- **Customer Churn** – Predicción de abandono de clientes (*clasificación binaria*). 
+- `requirements.txt`  
+  Lista de dependencias necesarias para ejecutar el notebook.
+
+- `data/heart.csv` *(no se incluye en el repo público)*  
+  Archivo con el dataset de enfermedades cardíacas. Debe descargarse manualmente (ver siguiente sección).
+
+- `Guía práctica - Redes neuronales - entrenamiento.pdf` *(opcional)*  
+  Documento de apoyo teórico/práctico usado como base para el ejercicio.
 
 ---
 
-## Requisitos
+## Dataset
 
-- Python 3.9+ (recomendado)
-- [TensorFlow](https://www.tensorflow.org/)
-- Bibliotecas típicas de ciencia de datos:
-  - `numpy`
-  - `pandas`
-  - `matplotlib`
-  - `scikit-learn` (para dividir en train/validation, normalización, etc.)
+Se utiliza el dataset clásico de **Heart Disease (clasificación binaria)**, donde la variable objetivo `target` indica:
 
-Ejemplo de instalación:
+- `0`: no presenta enfermedad cardíaca.
+- `1`: presenta enfermedad cardíaca.
 
-```bash
-pip install -r requirements.txt
+El dataset puede obtenerse, por ejemplo, desde Kaggle u otras fuentes públicas equivalentes.  
+Una vez descargado, guárdalo como:
+
+```text
+data/heart.csv
